@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Kolker+Brush&display=swap');
+
+
+body{
+    height: 100vh;
+    width:100vw;
+}
+
+.grid-parent{
+    background-color: grey;
+    display: grid;
+    padding: 10px;
+    grid-template: 1fr 1fr 1fr 1fr /1fr 1fr 1fr;
+    gap: 10px;
+    height: 100%; 
+    
+}
+
+
+.child{
+    background-color: red;
+    border: 1px solid green;
+   
+}
+
+.a {
+    /* sidebar */
+   
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+}
+
+.b {
+    /* nav */
+    grid-column: 2/4;
+}
+
+.c {
+    /* main */
+    grid-column: 2/4;
+    /* grid-row: 2/3 ; */
+    height: 300px;
+    /* the height will not work if needed to be expanded or 
+    in mobile screen */
+}
+
+.d {
+   
+    grid-column: 2/4;
+    /* footer */
+} 

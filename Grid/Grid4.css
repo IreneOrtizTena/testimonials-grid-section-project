@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width:100vw;
+}
+
+.grid-parent{
+    background-color: grey;
+    display: grid;
+    grid-template-areas: 
+        "sidebar nav nav nav nav"
+        "sidebar main main main main"
+        "sidebar main main main main"
+        "sidebar main main main main"
+        "sidebar main main main main"
+        "sidebar footer footer footer footer"
+    ;
+    gap: 10px;
+    height: 100%; 
+    
+}
+
+
+.child{
+    background-color: red;
+    border: 1px solid green;
+   
+}
+
+.a {
+    grid-area: footer;
+
+}
+
+.b {
+    grid-area: nav;
+}
+
+.c {
+    grid-area: main;
+}
+
+.d {
+    grid-area: sidebar;
+}
