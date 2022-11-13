@@ -12,6 +12,7 @@ body{
     font-size: 13px;
     
     
+    
 }
 
 .grid-parents{
@@ -25,6 +26,7 @@ body{
     padding: 10px;
     font-family: 'Kolker Brush', cursive;
     text-align: justify; 
+    border-radius: 5px;
     
 }
 
